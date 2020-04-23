@@ -3,7 +3,7 @@ package com.sourcey.materiallogindemo;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -133,7 +133,7 @@ public class SignupActivity extends AppCompatActivity {
             _emailText.setError(null);
         }
 
-        if (mobile.isEmpty() || mobile.length()!=10) {
+        if (mobile.length() != 10) {
             _mobileText.setError("Enter Valid Mobile Number");
             valid = false;
         } else {
